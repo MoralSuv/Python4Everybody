@@ -1,0 +1,1 @@
+"""    This is the first exercise of the course which consists of basic operations"""# Write a program that uses name input to welcome a username = input('What is your name?')print('Hello'+' ' + name)
