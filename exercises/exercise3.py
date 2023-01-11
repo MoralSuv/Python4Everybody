@@ -8,9 +8,10 @@ rate = float(input("Enter Rate: "))
 hours = float(input("Enter Hours: "))
 
 if hours >= 40:
-    extrahrs = (hours - 40)*1.5+hours
+    extrahrs = (hours - 40)*1.5 + 40
 else:
     extrahrs = hours
 
 payrate = rate*extrahrs
-print = (Pay, payrate)
+print("Pay: ", payrate)
+
