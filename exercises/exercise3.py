@@ -18,11 +18,9 @@ if int(problem) == 1:
     print("Pay: ", payrate)
 #Rewrite the program with try and except to output an error when either rate or hours is a string
 elif int(problem) == 2:
-    rate = input("Enter Rate: ")
-    hours = input("Enter Hours: ")
     try:
-        hours = int(hours)
-        rate = int(rate)
+        rate = float(input("Enter Rate: "))
+        hours = float(input("Enter Hours: "))
         if hours >= 40:
             extrahrs = (hours - 40)*1.5 + 40
         else:
