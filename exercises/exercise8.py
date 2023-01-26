@@ -4,10 +4,10 @@
 
 #Open the file from the exercises folder
 txtfile = open("./exercise_files/mbox-short.txt")
-
+#Extract the day of the week from each email
 for line in txtfile :
     clean_line = line.rstrip()
     words = clean_line.split()
-    if words[0] != "From":
+    if len(words) < 3 or words[0] != "From":
         continue
     print(words[2])
